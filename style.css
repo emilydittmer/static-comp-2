@@ -4,35 +4,58 @@ body {
   grid-template-rows: 5.5% 8.5% 3.5% 22.5% 2% 58%;
   height: 900px;
 }
-.nav-bar{
-  grid-column: 2 / span 2;
+
+.nav-bar {
   background-color: green;
+  display: grid;
+  grid-column: 2 / span 2;
+  grid-template-columns: 7.5% 70% 7.5% 7.5% 7.5%;
 }
-.side-menu{
-  grid-row: 1 / span 6;
+
+.side-menu {
   background-color: blue;
+  grid-row: 1 / span 6;
 }
-header{
-  grid-area: 2 / span 2;
+header {
   background-color: pink;
+  grid-area: 2 / span 2;
 }
-.menu{
-  grid-area: 3 / span 2;
+
+.menu {
   background-color: yellow;
+  grid-area: 3 / span 2;
 }
-.graphs{
-  grid-area: 4 / span 2;
+
+.graphs {
   background-color: orange;
+  display: grid;
+  grid-area: 4 / span 2;
+  grid-template-columns: 55% 45%;
+  grid-template-rows: 4fr 1fr;
 }
-.dropdown-arrow{
-  grid-area: 5 / span 2;
+
+.bar-graph img {
+  height: 100%;
+  object-fit: contain;
+  padding: 1px 70px;
+  width: 80%;
+}
+
+.dropdown-arrow {
   background-color: red;
+  grid-area: 5 / span 2;
 }
-.table{
-  grid-area: 6;
+
+.table {
   background-color: purple;
-}
-footer{
   grid-area: 6;
+}
+
+table {
+  border: solid white 2px;
+}
+
+footer {
   background-color: teal;
+  grid-area: 6;
 }
