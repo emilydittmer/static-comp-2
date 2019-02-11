@@ -36,10 +36,14 @@ input {
 .side-menu {
   background-color: blue;
   grid-row: 1 / span 6;
+  color: white;
+}
+
+.user-menu {
   text-align: center;
 }
 
-.side-menu img {
+.user-menu img {
   border-radius: 50%;
   height: 100px;
   width: 100px;
@@ -69,11 +73,11 @@ h2 {
   grid-area: 3 / span 2;
 }
 
-p {
+.menu p {
   font-size: 1rem;
   display: inline-block;
   margin: 5px 10px;
-  padding: 0 35px;
+  padding: 0 10px;
 }
 
 .graphs {
@@ -101,20 +105,20 @@ p {
 .circle-1 {
     border-top: 7px solid blue;
     border-right: 7px solid blue;
-    border-bottom: 7px solid red;
-    border-left: 7px solid red;
+    border-bottom: 7px solid grey;
+    border-left: 7px solid grey;
 }
 
 .circle-2 {
     border-top: 7px solid blue;
-    border-right: 7px solid red;
-    border-bottom: 7px solid red;
-    border-left: 7px solid red;
+    border-right: 7px solid grey;
+    border-bottom: 7px solid grey;
+    border-left: 7px solid grey;
 }
 
 .circle-3 {
     border: 7px solid blue;
-    border-left: 7px solid red;
+    border-left: 7px solid grey;
 }
 
 .bar-graph {
@@ -138,7 +142,7 @@ p {
 }
 
 table {
-  border: solid white 2px;
+  border: solid black 2px;
 }
 
 thead {
