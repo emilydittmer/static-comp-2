@@ -28,8 +28,9 @@ body {
 
 input {
   background-image: url(images/search-solid.svg);
+  background-position: 10px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 2rem;
   text-indent: 3rem;
 }
 
@@ -135,6 +136,11 @@ h2 {
 
 .dropdown-arrow {
   grid-area: 5 / span 2;
+  text-align: center;
+}
+
+#dropdown-arrow:before, #dropdown-arrow:after {
+  border-bottom: solid 1px;
 }
 
 .table {
