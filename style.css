@@ -122,6 +122,10 @@ h2 {
     border-left: 7px solid grey;
 }
 
+.circle-graph-btn {
+    grid-area: 2;
+}
+
 .bar-graph {
   grid-row-start: 1;
   grid-column-start: 2;
@@ -139,9 +143,9 @@ h2 {
   text-align: center;
 }
 
-#dropdown-arrow:before, #dropdown-arrow:after {
+/*#dropdown-arrow:before, #dropdown-arrow:after {
   border-bottom: solid 1px;
-}
+}*/
 
 .table {
   grid-area: 6;
@@ -149,10 +153,23 @@ h2 {
 
 table {
   border: solid black 2px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+td {
+  
+}
+
+.table-left {
+  width: 25%;
+}
+
+.table-right {
+  width: 75%;
 }
 
 thead {
-  column-span: 2;
 }
 
 footer {
