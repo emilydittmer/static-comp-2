@@ -28,9 +28,9 @@ body {
 }
 
 #nav-icons:hover{
-  background-color: blue;
+  background-color: navy;
   color: white;
-  border: 15px solid blue;
+  border: 15px solid navy;
 }
 
 input {
@@ -42,9 +42,16 @@ input {
 }
 
 .side-menu {
-  background-color: blue;
+  background-color: navy;
   grid-row: 1 / span 6;
   color: white;
+  text-indent: 1rem;
+}
+
+.side-menu p:hover{
+  border-left: 10px solid navy;
+  color: navy;
+  background-color: white;
 }
 
 .user-menu {
@@ -90,7 +97,7 @@ h2 {
 }
 
 .menu p:hover{
-  border-bottom: 3px solid blue;
+  border-bottom: 3px solid navy;
   font-weight: 700;
 }
 
@@ -110,28 +117,28 @@ h2 {
 .circle-1, .circle-2, .circle-3 {
     border-radius: 50%;
     display: inline-block;
-    height: 11.25rem;
+    height: 75%;
     margin: 20px;
     margin-bottom: 0;
-    width: 11.25rem;
+    width: 26%;
 }
 
 .circle-1 {
-    border-top: 10px solid blue;
-    border-right: 10px solid blue;
+    border-top: 10px solid navy;
+    border-right: 10px solid navy;
     border-bottom: 10px solid grey;
     border-left: 10px solid grey;
 }
 
 .circle-2 {
-    border-top: 10px solid blue;
+    border-top: 10px solid navy;
     border-right: 10px solid grey;
     border-bottom: 10px solid grey;
     border-left: 10px solid grey;
 }
 
 .circle-3 {
-    border: 10px solid blue;
+    border: 10px solid navy;
     border-left: 10px solid grey;
 }
 
@@ -174,6 +181,10 @@ table {
 th, td {
   height: 4.50rem;
 }
+th{
+  background-color: navy;
+  color: white;
+}
 
 .table-left {
   width: 25%;
@@ -196,4 +207,65 @@ footer {
   height: 3rem;
   margin: 10px;
   margin-top: 0;
+}
+
+@media (max-width: 1250px) {
+
+  body{
+    display: grid;
+    grid-template-rows: 5% 7% 2% 30% 1% 40% 15%;
+    grid-template-columns: 100%;
+  }
+
+  .nav-bar {
+    grid-area: 1 / 1;
+    width: 100%;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  header{
+    grid-area: 2 / 1;
+  }
+
+  .menu {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .menu p {
+    padding: 0;
+    font-size: 0.6rem;
+    margin-left: 3px;
+  }
+
+  .graphs {
+    grid-area: 4 / 1;
+    display: grid;
+    grid-template-rows: 45% 5% 45% 5%;
+    grid-template-columns: 100%;
+  }
+
+  .circle-1, .circle-2, .circle-3 {
+    margin: .5rem;
+  }
+
+  .bar-graph {
+    grid-area: 3 / 1;
+  }
+
+  .table {
+    grid-area: 6 / 1;
+  }
+
+  td, th {
+    height: 2rem;
+  }
+
+  footer {
+    grid-area: 7 / 1;
+  }
+
 }
